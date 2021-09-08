@@ -16,39 +16,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drawings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efs-yK-9dE">
-                                <rect key="frame" x="172" y="122" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fCs-tA-Yko">
+                                <rect key="frame" x="25" y="113.5" width="364" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2l-CL-7ZU">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="30"/>
+                                        <state key="normal" title="Broken Geod">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChooseDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="neL-Xr-wT3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imS-nx-MVt">
+                                        <rect key="frame" x="109" y="0.0" width="118" height="30"/>
+                                        <state key="normal" title="Digital Rendering">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChooseDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlo-7f-QXs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-sG-PfS">
+                                        <rect key="frame" x="247" y="0.0" width="117" height="30"/>
+                                        <state key="normal" title="Dancing Ribbons">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChooseDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvO-kV-4P9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Drawing_1" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-Vi-xst">
+                                <rect key="frame" x="12" y="163.5" width="390" height="540"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="540" id="eA5-KK-d65"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="390" id="eZS-uu-gfE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor's Illustrations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efs-yK-9dE">
+                                <rect key="frame" x="88.5" y="59" width="237" height="34.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemFillColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-eu-eWL">
+                                <rect key="frame" x="10" y="817" width="394" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Drawing_1" translatesAutoresizingMaskIntoConstraints="NO" id="ws2-Vi-xst">
-                                <rect key="frame" x="25" y="297" width="364" height="482"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2l-CL-7ZU">
-                                <rect key="frame" x="50" y="200" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="First Drawing"/>
-                                <connections>
-                                    <action selector="ChooseDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="neL-Xr-wT3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-sG-PfS">
-                                <rect key="frame" x="251" y="200" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Second Drawing"/>
-                                <connections>
-                                    <action selector="ChooseDrawing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvO-kV-4P9"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fCs-tA-Yko" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BbX-EO-TUS"/>
+                            <constraint firstItem="i7v-eu-eWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CaW-eG-BaJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i7v-eu-eWL" secondAttribute="trailing" constant="10" id="Ipv-X5-HpD"/>
+                            <constraint firstItem="ws2-Vi-xst" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jab-FT-gZo"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="i7v-eu-eWL" secondAttribute="bottom" constant="45" id="QRE-XR-XsA"/>
+                            <constraint firstItem="i7v-eu-eWL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wof-io-SM9"/>
+                            <constraint firstItem="ws2-Vi-xst" firstAttribute="top" secondItem="fCs-tA-Yko" secondAttribute="bottom" constant="20" id="ZLL-Xi-Xs7"/>
+                            <constraint firstItem="efs-yK-9dE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZTj-id-vbw"/>
+                            <constraint firstItem="i7v-eu-eWL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ws2-Vi-xst" secondAttribute="bottom" constant="20" id="crb-YM-sH8"/>
+                            <constraint firstItem="efs-yK-9dE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="loP-ZL-moL"/>
+                            <constraint firstItem="fCs-tA-Yko" firstAttribute="top" secondItem="efs-yK-9dE" secondAttribute="bottom" constant="20" id="u5H-ec-Rji"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="drawingImage" destination="ws2-Vi-xst" id="vP1-MS-S83"/>
+                        <outlet property="drawingText" destination="i7v-eu-eWL" id="hcI-PV-Rej"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,6 +99,9 @@
         <image name="Drawing_1" width="2093" height="2977"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
