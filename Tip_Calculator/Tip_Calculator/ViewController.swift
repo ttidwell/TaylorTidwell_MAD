@@ -76,17 +76,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         totalPerPerson.textColor = UIColor(red: 1.0, green: 0, blue: 0, alpha: 1.0)
     }
     
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
+    
+    
     @IBAction func calcButton(_ sender: UIButton) {
         updateTipTotals()
     }
     
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//    }
+    
     
     override func viewDidLoad() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -99,9 +102,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    
     
     @objc func keyboardWillShow(notification: NSNotification) {
         _ = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
@@ -110,6 +117,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //            }
 //        }
     }
+    
+    
     
     @objc func keyboardWillHide(notification: NSNotification) { if ((notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue) != nil {
             if self.view.frame.origin.y != 0 {
