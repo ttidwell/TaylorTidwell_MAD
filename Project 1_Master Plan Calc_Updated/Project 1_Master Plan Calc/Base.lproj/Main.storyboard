@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mIA-WQ-Nna">
-                                        <rect key="frame" x="20" y="40" width="374" height="1374"/>
+                                        <rect key="frame" x="20" y="40" width="374" height="1384"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Black" translatesAutoresizingMaskIntoConstraints="NO" id="nMd-nB-5M0">
                                                 <rect key="frame" x="20.5" y="0.0" width="333" height="150"/>
@@ -30,7 +30,7 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="fIr-hT-hMK">
-                                                <rect key="frame" x="0.0" y="170" width="374" height="1204"/>
+                                                <rect key="frame" x="0.0" y="170" width="374" height="1214"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Ycs-JE-Qdn">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="430"/>
@@ -210,10 +210,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="bFf-qJ-dYr">
-                                                        <rect key="frame" x="0.0" y="1164" width="374" height="40"/>
+                                                        <rect key="frame" x="0.0" y="1164" width="374" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jel-dX-T5y">
-                                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="40"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="149.5" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                                                 <state key="normal" title="New Project">
                                                                     <color key="titleShadowColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -223,20 +223,7 @@
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WXy-ab-LPH">
-                                                                <rect key="frame" x="224.5" y="0.0" width="149.5" height="40"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-WP-HYg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="40"/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
-                                                                        <state key="normal" title="Share"/>
-                                                                    </button>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="04h-TY-5bg">
-                                                                        <rect key="frame" x="130.5" y="-1" width="19" height="41"/>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="W5y-WP-HYg" firstAttribute="firstBaseline" secondItem="04h-TY-5bg" secondAttribute="firstBaseline" id="Rsr-tI-yhp"/>
-                                                                </constraints>
+                                                                <rect key="frame" x="224.5" y="0.0" width="149.5" height="50"/>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
@@ -284,7 +271,6 @@
     </scenes>
     <resources>
         <image name="Logo Black" width="333.33334350585938" height="333.33334350585938"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="x" width="1121" height="1121.3333740234375"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
