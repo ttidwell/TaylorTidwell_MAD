@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TacoTuesday</string>
+    <string name="taco_tuesday">Taco Tuesday</string>
+    <string name="Chicken">chicken</string>
+    <string name="Steak">steak</string>
+    <string name="Vegetarian">vegetarian</string>
+    <string name="createTaco">Create Taco</string>
+    <string name="guacamole">Guacamole</string>
+    <string name="cheese">Cheese</string>
+    <string name="pico">Pico</string>
+    <string name="sourCream">Sour Cream</string>
+    <string name="glutenFree">Gluten Free</string>
+    <string-array name="location">
+        <item>Select Location</item>
+        <item>the Hill</item>
+        <item>29th St.</item>
+        <item>Pearl St.</item>
+    </string-array>
+</resources>
