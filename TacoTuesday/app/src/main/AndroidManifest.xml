@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TacoTheme">
         <activity
+            android:name=".TacoLocationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_taco_location"
+            android:theme="@style/Theme.TacoTheme.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

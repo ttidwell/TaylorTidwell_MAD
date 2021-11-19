@@ -25,4 +25,13 @@
         <item name="android:colorBackground">@color/backgroundColor</item>
     </style>
 
+    <style name="Theme.TacoTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TacoTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TacoTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
