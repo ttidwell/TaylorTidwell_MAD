@@ -54,12 +54,6 @@ class TacoLocationActivity : AppCompatActivity() {
         intent.action = Intent.ACTION_VIEW
         intent.data = tacoShopUrl?.let{ Uri.parse(tacoShopUrl)}
 
-        // verify that the intent will resolve to an activity
-        if (intent.resolveActivity(packageManager) != null){
-            // start activity
-            startActivity(intent)
-        } else {
-            // TODO create a snack bar to inform user of error
-        }
+        startActivity(intent)
     }
 }
